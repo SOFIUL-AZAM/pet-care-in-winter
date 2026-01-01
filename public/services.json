@@ -1,0 +1,74 @@
+[
+  {
+    "serviceId": 1,
+    "serviceName": "Winter Coat Fitting for Dogs",
+    "providerName": "PawCare Studio",
+    "providerEmail": "info@pawcare.com",
+    "price": 25,
+    "rating": 4.9,
+    "slotsAvailable": 4,
+    "description": "Custom coat fitting and warm outfit options to keep your dog comfortable in the cold.",
+    "image": "https://i.postimg.cc/example1.png",
+    "category": "Clothing"
+  },
+  {
+    "serviceId": 2,
+    "serviceName": "Winter Grooming & Paw Treatment",
+    "providerName": "CozyPets Grooming",
+    "providerEmail": "hello@cozypets.com",
+    "price": 30,
+    "rating": 4.8,
+    "slotsAvailable": 3,
+    "description": "Professional grooming with moisturizing paw balm and winter-safe shampoo.",
+    "image": "https://i.postimg.cc/example2.png",
+    "category": "Grooming"
+  },
+  {
+    "serviceId": 3,
+    "serviceName": "Heated Pet Bed Setup",
+    "providerName": "SnugPaws",
+    "providerEmail": "contact@snugpaws.com",
+    "price": 40,
+    "rating": 4.7,
+    "slotsAvailable": 5,
+    "description": "Installation and setup of heated pet beds to keep your furry friends cozy.",
+    "image": "https://i.postimg.cc/example3.png",
+    "category": "Accessories"
+  },
+  {
+    "serviceId": 4,
+    "serviceName": "Winter Paw Protection Wax",
+    "providerName": "PawShield",
+    "providerEmail": "support@pawshield.com",
+    "price": 15,
+    "rating": 4.6,
+    "slotsAvailable": 6,
+    "description": "Apply protective wax to pets’ paws to prevent cracking and cold damage.",
+    "image": "https://i.postimg.cc/example4.png",
+    "category": "Care Products"
+  },
+  {
+    "serviceId": 5,
+    "serviceName": "Dog Winter Fitness Session",
+    "providerName": "ActivePaws Gym",
+    "providerEmail": "fitness@activepaws.com",
+    "price": 35,
+    "rating": 4.8,
+    "slotsAvailable": 2,
+    "description": "Indoor fitness and play sessions to keep dogs active during the winter.",
+    "image": "https://i.postimg.cc/example5.png",
+    "category": "Activities"
+  },
+  {
+    "serviceId": 6,
+    "serviceName": "Cozy Indoor Cat Retreat",
+    "providerName": "KittyHaven",
+    "providerEmail": "info@kittyhaven.com",
+    "price": 20,
+    "rating": 4.9,
+    "slotsAvailable": 3,
+    "description": "Warm indoor retreat with toys and blankets for cats to enjoy winter safely.",
+    "image": "https://i.postimg.cc/example6.png",
+    "category": "Accommodation"
+  }
+]
