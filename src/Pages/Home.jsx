@@ -34,7 +34,7 @@ const Home = () => {
 
             <section>
                 <h2 className='text-3xl font-bold mb-8 text-center'>Popular Winter Care Service</h2>
-                <div>
+                <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
                     {services.map((service) =>(
                         <ServiceCard key={service.serviceId} service={service}></ServiceCard>
                     ))}
