@@ -34,7 +34,7 @@ const Navbar = () => {
                     user?(
                         <>
                         <div className='tooltip tooltip-bottom' data-tip={user.displayName || "User"}>
-                            <img src={user.photoURL || "https://i.postimg.cc/default-avatar.png"} alt="user" className='w-10 h-10 rounded-full border' />
+                            <img src={user.photoURL || "https://cdn-icons-png.flaticon.com/512/149/149071.png"} alt="user" className='w-10 h-10 rounded-full border' />
                         </div>
 
                         <button onClick={handleLogout} className='btn btn-sm btn-outline btn-error'>

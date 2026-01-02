@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { AuthContext } from '../Auth/AuthProvider';
+import { useLocation } from 'react-router';
 
-const PrivateRoute = () => {
-    return (
-        <div>
-            private route
-        </div>
-    );
+const PrivateRoute = ({children}) => {
+    const {user, loading} = useContext(AuthContext);
+    const location = useLocation();
+
+    if(loading)
+        return <div className='text-center mt-10 text-xl'>Loading...</div>
+
+    if(!user) return <Navigate to="/auth/login" state={location.pathname}></Navigate>
+    return children;
+
 };
 
 export default PrivateRoute;
