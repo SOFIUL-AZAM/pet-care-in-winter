@@ -1,16 +1,22 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { AuthContext } from '../Auth/AuthProvider';
-import { Navigate, useLocation } from 'react-router';
+import { Navigate, useLocation, useNavigate } from 'react-router';
 
 const PrivateRoute = ({children}) => {
     const {user, loading} = useContext(AuthContext);
     const location = useLocation();
+    const navigate = useNavigate();
+
+
+    useEffect(() =>{
+        if(!loading && !user){
+            navigate("/auth/login", {state:{from: location}});
+        }
+    })
 
     if(loading)
         return <div className='text-center mt-10 text-xl'>Loading...</div>
-
-    if(!user) return <Navigate to="/auth/login" state={location.pathname}></Navigate>
-    return children;
+    return user ? children : null;
 
 };
 
