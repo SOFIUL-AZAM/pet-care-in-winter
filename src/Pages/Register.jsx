@@ -2,10 +2,11 @@ import React, { useContext, useState } from 'react';
 import { AuthContext } from '../Auth/AuthProvider';
 import { Link, useNavigate } from 'react-router';
 import toast from 'react-hot-toast';
-import { FaEye, FaEyeSlash } from 'react-icons/fa';
+import { FaEye, FaEyeSlash, FaGoogle } from 'react-icons/fa';
+import { FcGoogle } from 'react-icons/fc';
 
 const Register = () => {
-    const {createUser, googleLogin, updateUserProfile, auth} = useContext(AuthContext);
+    const {createUser, googleLogin, updateUserProfile} = useContext(AuthContext);
 
     const navigate = useNavigate();
 
@@ -125,8 +126,8 @@ const handleGoogleRegister = () =>{
 
             <div className='mt-4'>
                 <button
-                onClick={handleGoogleRegister} className='btn btn-outline w-ful'>
-                    Continue with Google
+                onClick={handleGoogleRegister} className='btn btn-outline w-full'>
+                  <FcGoogle></FcGoogle>  Continue with Google
                 </button>
             </div>
 

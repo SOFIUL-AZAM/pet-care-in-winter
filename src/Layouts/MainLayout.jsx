@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { Outlet } from 'react-router';
 import { Toaster } from 'react-hot-toast';
+import ScrollToTop from '../components/ScrollToTop';
 
 const MainLayout = () => {
     return (
@@ -10,6 +11,7 @@ const MainLayout = () => {
             <Navbar></Navbar>
             <Toaster position='top-center'/>
             <main className='flex-grow w-11/12 mx-auto my-5'>
+                <ScrollToTop/>
                 <Outlet></Outlet>
             </main>
             <Footer></Footer>

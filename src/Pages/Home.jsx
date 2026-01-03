@@ -44,13 +44,13 @@ const Home = () => {
             <section>
                 <h2 className='text-2xl font-bold mb-5'>Winter Care Tips for Pets</h2>
                 <ul >
-                    "Keep your pets warm with winter coats.",
+                    <p>Keep your pets warm with winter coats.</p>
                     <br />
-                    "Moisturize paws to prevent cracking.",
+                    <p>Moisturize paws to prevent cracking.</p>
                     <br />
-                    "Provide cozy bedding near heaters.",
+                    <p>Provide cozy bedding near heaters.</p>
                     <br />
-                    "Limit outdoor exposure in extreme cold."
+                    <p>Limit outdoor exposure in extreme cold.</p>
                 </ul>
             </section>
             

@@ -1,19 +1,22 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import { AuthContext } from '../Auth/AuthProvider';
+import toast from 'react-hot-toast';
 
 const ServiceDetails = () => {
     const services = useLoaderData();
     const {id} = useParams();
     const {user} = useContext(AuthContext);
 
+    const [booked, setBooked] =useState(false);
+
     const service = services.find((item) => item.serviceId === parseInt(id));
 
     const handleBookService = (e) =>{
         e.preventDefault();
-        // toast.success("")
-        alert("Service booked successfully");
+        toast.success("Service booked successfully")
         e.target.reset();
+        setBooked(true);
     };
 
     if(!service) {
@@ -35,12 +38,12 @@ const ServiceDetails = () => {
                 <h2 className='text-2xl font-bold'>{service.serviceName}</h2>
                 <p className='text-gray-700'>{service.description}</p>
 
-                <p><strong>Category:</strong>{service.category}</p>
-                <p><strong>Provider:</strong>{service.providerName}</p>
-                <p><strong>Email:</strong>{service.providerEmail}</p>
-                <p><strong>Price:</strong>{service.price}</p>
-                <p><strong>Rating:</strong>{service.rating}</p>
-                <p><strong>Available Slots:</strong>{service.slotsAvailable}</p>
+                <p><strong>Category: </strong>{service.category}</p>
+                <p><strong>Provider: </strong>{service.providerName}</p>
+                <p><strong>Email: </strong>{service.providerEmail}</p>
+                <p><strong>Price: </strong>{service.price}</p>
+                <p><strong>Rating: </strong>{service.rating}</p>
+                <p><strong>Available Slots: </strong>{service.slotsAvailable}</p>
 
             </div>
 
@@ -65,7 +68,8 @@ const ServiceDetails = () => {
                     </div>
 
                     <button
-                    type='submit' className='btn btn-primary w-full'> Book Now </button>
+                    type='submit'
+                    disabled={booked} className={`btn w-full ${booked? "btn-success cursor-not-allowed" : "btn-primary"}`}> {booked ? "Booked" : "Book Now"}</button>
                 </form>
             </div>
         </div>

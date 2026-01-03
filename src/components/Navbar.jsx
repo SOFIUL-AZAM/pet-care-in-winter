@@ -1,14 +1,15 @@
 import React, { useContext } from 'react';
 import { AuthContext } from '../Auth/AuthProvider';
 import { Link, NavLink } from 'react-router';
+import toast from 'react-hot-toast';
 
 const Navbar = () => {
     const {user, logoutUser} = useContext(AuthContext);
 
     const handleLogout = () =>{
         logoutUser() 
-        .then(() =>alert("Logged out successfully"))
-        .catch((err) => alert(err.message));
+        .then(() =>toast.success("Logged out successfully"))
+        .catch((err) => toast.error(err.message));
     };
 
     const navLinkStyle = ({isActive}) =>
@@ -17,7 +18,7 @@ const Navbar = () => {
         <div className='navbar bg-base-100 shadow-md px-6 flex justify-between items-center'>
             <Link to="/" className=' text-2xl font-bold text-blue-600'>WarmPaws</Link>
 
-            <ul className='hidden lg:flex gap-6'>
+            <ul className=' lg:flex gap-6'>
                 <li>
                     <NavLink to="/" className={navLinkStyle}>Home</NavLink>
                 </li>

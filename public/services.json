@@ -8,7 +8,7 @@
     "rating": 4.9,
     "slotsAvailable": 4,
     "description": "Custom coat fitting and warm outfit options to keep your dog comfortable in the cold.",
-    "image": "https://i.postimg.cc/example1.png",
+    "image": "https://i.postimg.cc/PJNjM6Pg/images1.jpg",
     "category": "Clothing"
   },
   {
@@ -20,7 +20,7 @@
     "rating": 4.8,
     "slotsAvailable": 3,
     "description": "Professional grooming with moisturizing paw balm and winter-safe shampoo.",
-    "image": "https://i.postimg.cc/example2.png",
+    "image": "https://i.postimg.cc/HkmTq9KD/images2.jpg",
     "category": "Grooming"
   },
   {
@@ -32,7 +32,7 @@
     "rating": 4.7,
     "slotsAvailable": 5,
     "description": "Installation and setup of heated pet beds to keep your furry friends cozy.",
-    "image": "https://i.postimg.cc/example3.png",
+    "image": "https://i.postimg.cc/VN6PwGFY/gpeth3.jpg",
     "category": "Accessories"
   },
   {
@@ -44,7 +44,7 @@
     "rating": 4.6,
     "slotsAvailable": 6,
     "description": "Apply protective wax to pets’ paws to prevent cracking and cold damage.",
-    "image": "https://i.postimg.cc/example4.png",
+    "image": "https://i.postimg.cc/Qx3LCxq4/images4.jpg",
     "category": "Care Products"
   },
   {
@@ -56,7 +56,7 @@
     "rating": 4.8,
     "slotsAvailable": 2,
     "description": "Indoor fitness and play sessions to keep dogs active during the winter.",
-    "image": "https://i.postimg.cc/example5.png",
+    "image": "https://i.postimg.cc/vmDkk1Q6/images5.jpg",
     "category": "Activities"
   },
   {
@@ -68,7 +68,7 @@
     "rating": 4.9,
     "slotsAvailable": 3,
     "description": "Warm indoor retreat with toys and blankets for cats to enjoy winter safely.",
-    "image": "https://i.postimg.cc/example6.png",
+    "image": "https://i.postimg.cc/bY1M7fjT/images6.jpg",
     "category": "Accommodation"
   }
 ]

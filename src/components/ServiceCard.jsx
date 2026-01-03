@@ -11,8 +11,8 @@ const ServiceCard = ({service}) => {
 
              <div className='p-4'>
                 <h3 className='font-bold text-lg'>{service.serviceName}</h3>
-                <p className='text-gray-600'>Rating: {service.rating}</p>
-                <p className='text-gray-600'>Price: {service.price}</p>
+                <p className='text-gray-600'>Rating: { service.rating}</p>
+                <p className='text-gray-600'>Price: { service.price}</p>
                 <Link 
                 to={`/service/${service.serviceId}`}
                 className='mt-3 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600'>View Details</Link>

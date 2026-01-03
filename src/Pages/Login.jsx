@@ -3,6 +3,7 @@ import { AuthContext } from '../Auth/AuthProvider';
 import { Link, useLocation, useNavigate } from 'react-router';
 import toast from 'react-hot-toast';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
+import { FcGoogle } from 'react-icons/fc';
 
 const Login = () => {
     const {loginUser, googleLogin} = useContext(AuthContext);
@@ -84,7 +85,7 @@ const Login = () => {
             <button 
             onClick={handleGoogleLogin}
             className='btn btn-outline w-full'>
-                Continue with Google
+              <FcGoogle/>  Continue with Google
             </button>
            </div>
 
