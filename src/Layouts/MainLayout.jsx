@@ -7,10 +7,10 @@ import ScrollToTop from '../components/ScrollToTop';
 
 const MainLayout = () => {
     return (
-        <div className='flex flex-col min-h-screen'>
+        <div className='flex flex-col min-h-screen bg-gray-200'>
             <Navbar></Navbar>
             <Toaster position='top-center'/>
-            <main className='flex-grow w-11/12 mx-auto my-5'>
+            <main className='flex-grow w-11/12 mx-auto my-5 '>
                 <ScrollToTop/>
                 <Outlet></Outlet>
             </main>

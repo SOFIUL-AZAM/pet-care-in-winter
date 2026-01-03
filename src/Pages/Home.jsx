@@ -12,6 +12,7 @@ const Home = () => {
     return (
         <div className='space-y-16 max-w-7xl mx-auto px-4'>
            <section className='w-full h-96 rounded-lg overflow-hidden shadow-lg'>
+            
             <Swiper 
                 modules={[Autoplay]}
                 autoplay = {{delay: 3000, disableOnInteraction:false}}
@@ -34,7 +35,7 @@ const Home = () => {
 
             <section>
                 <h2 className='text-3xl font-bold mb-8 text-center'>Popular Winter Care Service</h2>
-                <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
+                <div className='grid grid-cols-1 md:grid-cols-3 gap-6 '>
                     {services.map((service) =>(
                         <ServiceCard key={service.serviceId} service={service}></ServiceCard>
                     ))}
@@ -57,22 +58,22 @@ const Home = () => {
             
             <section>
                 <h2 className='text-2xl font-bold mb-5'>Meet Our Expert Vets</h2>
-                <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
-                    <div className='border rounded-lg p-4 flex flex-col items-center shadow-md'>
+                <div className='grid grid-cols-1 md:grid-cols-3 gap-6 '>
+                    <div className='border rounded-lg p-4 flex flex-col items-center shadow-md bg-white'>
                         <img src="https://i.ibb.co.com/3Y40RBC2/Alpha-Flo-Blog-Edit-1080x675.webp" alt="Dr. Michael Carter"
                         className='w-32 h-32 object-cover rounded-full mb-3' />
                         <h3 className='text-lg font-semibold'>Dr. Michael Carter</h3>
                         <p className='text-gray-600'>Canine Health</p>
                     </div>
 
-                    <div className='border rounded-lg p-4 flex flex-col items-center shadow-md'>
+                    <div className='border rounded-lg p-4 flex flex-col items-center shadow-md bg-white'>
                         <img src="https://i.ibb.co.com/hx8k5Jz6/images.jpg" alt="Dr. John Smith"
                         className='w-32 h-32 object-cover rounded-full mb-3' />
                         <h3 className='text-lg font-semibold'>Dr. John Smith</h3>
                         <p className='text-gray-600'>Pet Nutrition</p>
                     </div>
 
-                    <div className='border rounded-lg p-4 flex flex-col items-center shadow-md'>
+                    <div className='border rounded-lg p-4 flex flex-col items-center shadow-md bg-white'>
                         <img src="https://i.ibb.co.com/mrH7TXrp/images222.jpg" alt="Dr. Robert Wilson"
                         className='w-32 h-32 object-cover rounded-full mb-3' />
                         <h3 className='text-lg font-semibold'>Dr. Robert Wilson</h3>

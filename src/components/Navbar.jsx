@@ -17,6 +17,7 @@ const Navbar = () => {
     return (
         <div className='navbar bg-base-100 shadow-md px-6 flex justify-between items-center'>
             <Link to="/" className=' text-2xl font-bold text-blue-600'>WarmPaws</Link>
+            
 
             <ul className=' lg:flex gap-6'>
                 <li>
@@ -52,6 +53,7 @@ const Navbar = () => {
                     )
                 }
             </div>
+            
         </div>
     );
 };
