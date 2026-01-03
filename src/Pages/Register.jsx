@@ -46,26 +46,24 @@ const Register = () => {
     .then(() => {
         updateUserProfile(name,photo)
         .then(() =>{
-            // toast.success("")
-            alert("Registration successful");
+            toast.success("Registration successful")
             navigate("/");
         });
     })
     .catch((err) => 
-    // toast.error(err.message)
-    alert(err));
+    toast.error(err.message)
+)
 };
 
 const handleGoogleRegister = () =>{
     googleLogin()
     .then (() => {
-        // toast.success("Singed up with Google");
-        alert("Singed up with Google");
+        toast.success("Singed up with Google");
         navigate("/");
     })
     .catch((err) => 
-        // toast.error(err.message)
-        alert(err));
+        toast.error(err.message)
+        );
 };
     
 
@@ -101,7 +99,7 @@ const handleGoogleRegister = () =>{
 
                 <div>
                     <label className='block mb-1 font-medium'>Password</label>
-                    <div>
+                    <div className='relative'>
                         <input type={showPassword ? "text" : "password"}
                         name='password'
                         required
