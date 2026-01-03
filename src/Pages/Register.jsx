@@ -5,7 +5,7 @@ import toast from 'react-hot-toast';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
 const Register = () => {
-    const {createUser, googleLogin, updateProfile, auth} = useContext(AuthContext);
+    const {createUser, googleLogin, updateUserProfile, auth} = useContext(AuthContext);
 
     const navigate = useNavigate();
 
